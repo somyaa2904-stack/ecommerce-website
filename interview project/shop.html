@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumora | Shop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+<div class="container nav-container">
+
+<a href="index.html" class="logo">Lumora<span>.</span></a>
+
+<button class="menu-btn" id="menuBtn">☰</button>
+
+<nav id="navMenu">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="shop.html" class="active">Shop</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="nav-actions">
+<button class="icon-btn" id="themeBtn">☾</button>
+<a href="shop.html" class="cart-btn">🛒<span id="cartCount">0</span></a>
+<a href="auth.html" class="login-btn" id="loginBtn">Login</a>
+<button class="logout-btn hidden" id="logoutBtn">Logout</button>
+</div>
+
+</div>
+</header>
+
+<section class="page-hero">
+<div class="container">
+<span class="eyebrow">LUMORA SHOP</span>
+<h1>Find something you love.</h1>
+<p>Explore our complete collection.</p>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<div class="shop-tools">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search products..."
+>
+
+<select id="categoryFilter">
+<option value="all">All Categories</option>
+<option value="Fashion">Fashion</option>
+<option value="Electronics">Electronics</option>
+<option value="Home">Home</option>
+</select>
+
+<select id="sortProducts">
+<option value="default">Sort By</option>
+<option value="low">Price: Low to High</option>
+<option value="high">Price: High to Low</option>
+<option value="name">Name A-Z</option>
+</select>
+
+</div>
+
+<div class="shop-layout">
+
+<div>
+<div class="products-grid" id="shopProducts"></div>
+</div>
+
+<aside class="cart-panel">
+
+<div class="cart-header">
+<h2>Your Cart</h2>
+<span id="cartItemsCount">0 Items</span>
+</div>
+
+<div id="cartItems"></div>
+
+<div class="cart-summary">
+<div><span>Subtotal</span><strong id="subtotal">₹0</strong></div>
+<div><span>Discount</span><strong id="discount">₹0</strong></div>
+<div><span>Delivery</span><strong id="delivery">₹0</strong></div>
+<hr>
+<div class="final-total"><span>Total</span><strong id="total">₹0</strong></div>
+<button class="checkout-btn" id="checkoutBtn">Checkout</button>
+</div>
+
+</aside>
+
+</div>
+
+</div>
+</section>
+
+<div id="toast" class="toast"></div>
+
+<footer>
+<div class="container footer-grid">
+<div>
+<a href="index.html" class="logo">Lumora<span>.</span></a>
+<p>Modern products. Clean experience.</p>
+</div>
+<div>
+<h3>Explore</h3>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="shop.html">Shop</a>
+</div>
+<div>
+<h3>Pages</h3>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+<a href="auth.html">Account</a>
+</div>
+<div>
+<h3>Contact</h3>
+<p>Jaipur, Rajasthan</p>
+<p>hello@lumora.store</p>
+</div>
+</div>
+<div class="copyright">© 2026 Lumora. All Rights Reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

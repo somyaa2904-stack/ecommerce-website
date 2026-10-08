@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumora | Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+<header class="navbar">
+<div class="container nav-container">
+
+<a href="index.html" class="logo">Lumora<span>.</span></a>
+
+<div class="nav-actions">
+<a href="index.html" class="back-home">← Home</a>
+<button class="icon-btn" id="themeBtn">☾</button>
+</div>
+
+</div>
+</header>
+
+<main class="auth-container">
+
+<div class="auth-card">
+
+<div class="auth-logo">
+Lumora<span>.</span>
+</div>
+
+<h1 id="authTitle">Welcome Back</h1>
+
+<p id="authSubtitle">
+Login to continue shopping.
+</p>
+
+<form id="loginForm">
+
+<input
+type="email"
+id="loginEmail"
+placeholder="Email Address"
+required
+>
+
+<input
+type="password"
+id="loginPassword"
+placeholder="Password"
+required
+>
+
+<button type="submit" class="auth-btn">
+Login
+</button>
+
+</form>
+
+<form id="registerForm" class="hidden">
+
+<input
+type="text"
+id="registerName"
+placeholder="Full Name"
+required
+>
+
+<input
+type="email"
+id="registerEmail"
+placeholder="Email Address"
+required
+>
+
+<input
+type="password"
+id="registerPassword"
+placeholder="Create Password"
+required
+>
+
+<input
+type="password"
+id="confirmPassword"
+placeholder="Confirm Password"
+required
+>
+
+<button type="submit" class="auth-btn">
+Create Account
+</button>
+
+</form>
+
+<p class="auth-switch">
+
+<span id="switchText">
+Don't have an account?
+</span>
+
+<button id="switchAuth">
+Create Account
+</button>
+
+</p>
+
+</div>
+
+</main>
+
+<div id="toast" class="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
